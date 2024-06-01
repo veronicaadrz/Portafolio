@@ -1,7 +1,7 @@
 /* Barra de navegacion */
 @font-face {
   font-family: "Roslindale";
-  src: url("fontFamily/Roslindale-DisplayCondensedRegular-Testing.ttf");
+  src: url("fontFamily/Roslindale-DisplayCondensedSemiBold-Testing.ttf");
   font-size: normal;
   font-weight: bold;
 }
@@ -10,8 +10,9 @@
   padding: 2rem;
   background-color: #f5f6f7;
   font-family: "Roslindale", bold;
+  font-size: 25px;
 }
-
+ 
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;  
@@ -27,13 +28,13 @@ section {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size:4rem;
   font-family: 'Roslindale', cursive;
 }
 
 .seccion-oscura {
   color: white;
-  background-color: #1b1b32;
+  background-color: #531e85;
 }
 
 .seccion-clara {
@@ -42,23 +43,28 @@ h1 {
 }
 
 .seccion-titulo {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: 'Roslindale', cursive;
+  color: #8d82ca;
 }
 
 .seccion-descripcion {
   font-size: 1.2rem;
   color: #584e4e;
+  
 }
 
 .seccion-texto {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  text-align: justify;
 }
 
 .btn-info {
   font-size: 1.1rem;
   margin: 20px;
+  background-color: #531e85;
+  color: white;
 }
 
 .texto-negro {
@@ -74,22 +80,30 @@ h1 {
 .hero {
   background-color: #f5f6f7;
   min-height: 450px;
-  text-align: center;
+  text-align:left;
+  display: flex;
+  flex-direction: row;
 }
 
 .hero-principal {
   padding: 3rem;
+  align-self: flex-start;
 }
 
 .hero-imagen-desarrollador {
   width: 200px;
-  height: 200px;
   margin: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
   color: #615151;
+}
+
+.hero-inferior {
+  align-self: flex-end;
 }
 
 /* Sobre mi */
@@ -127,13 +141,14 @@ h1 {
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #7ade30;
-  background-color: #0a0a23;
+  color: white;
+  background-color: #531e85;
   padding: 8px 19px;
   border-radius: 50%;
 }
 
 .experiencia-titulo {
+  font-family: 'Roslindale';
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
@@ -202,7 +217,7 @@ h1 {
 }
 
 .overlay i {
-  color: black;
+  color: #531e85;
   font-size: 60px;
   margin: 10px;
 }
@@ -272,9 +287,9 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: #f5f6f7;
   border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px white;
+  box-shadow: 0px 1px 4px 1px #531e85;
 }
 
 .contacto .row {
@@ -284,15 +299,15 @@ h1 {
 }
 
 .contacto .descripcion {
-  color: white;
+  color: #531e85;
   font-size: 1.2rem;
 }
 
 .contacto button {
-  color: white;
+  color: #531e85;
   font-weight: bold;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #531e85;
   padding: 1.25em 2em;
   margin: 10px;
   border-radius: 100px;
@@ -305,7 +320,7 @@ h1 {
 }
 
 .contacto button i {
-  color: white;
+  color: #531e85;
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
@@ -354,7 +369,7 @@ footer {
 
 .iconos-redes-sociales a:hover {
   background-color: white;
-  border: 2px solid rgb(13, 110, 253);
+  border: 2px solid #531e85;
 }
 
 .iconos-redes-sociales a:hover i {
@@ -398,6 +413,7 @@ footer {
 
 @media screen and (min-width: 700px) {
   .hero-inferior-imagen {
-    max-width: 600px;
+    max-width: 400px;
+    display: flex;
   }
 }
